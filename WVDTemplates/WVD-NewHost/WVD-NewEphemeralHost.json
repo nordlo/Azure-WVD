@@ -71,7 +71,7 @@
     },
     "VM_SIZES": {
       "Small": {
-        "WVDsize": "Standard_D4as_v4"
+        "WVDsize": "Standard_D4ds_v4"
       },
       "Medium": {
         "WVDsize": "Standard_F16s"
