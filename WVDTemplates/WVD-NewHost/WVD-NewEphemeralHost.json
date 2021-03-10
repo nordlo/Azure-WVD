@@ -91,10 +91,10 @@
         "License": "Windows_Client"
       }
     },
-    "VMName": "[concat(parameters('Prefix'),'-VM-')]",
+    "VMName": "[concat(parameters('Prefix'),'-AZ-WVD-')]",
     "subnetRef": "[concat(subscription().id,'/resourceGroups/',parameters('VnetRgName'),'/providers/Microsoft.Network/virtualNetworks/', parameters('VnetName'),'/subnets/', parameters('subnetName'))]",
     "JoinUser": "[concat(parameters('adminUsername'),'@',parameters('DomainFQDN'))]",
-    "fileUris": "https://raw.githubusercontent.com/DeanCefola/Azure-WVD/master/PowerShell/New-WVDSessionHost.ps1",
+    "fileUris": "https://raw.githubusercontent.com/Nordlo/Azure-WVD/master/PowerShell/New-WVDSessionHost.ps1",
     "UriFileNamePieces": "[split(variables('fileUris'), '/')]",
     "firstFileNameString": "[variables('UriFileNamePieces')[sub(length(variables('UriFileNamePieces')), 1)]]",
     "firstFileNameBreakString": "[split(variables('firstFileNameString'), '?')]",
