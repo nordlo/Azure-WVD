@@ -4,7 +4,7 @@
   "parameters": {
     "Prefix": {
       "type": "string",
-      "defaultValue": "wvd"
+      "defaultValue": "Prifix"
     },
     "AdminUserName": {
       "type": "string"
